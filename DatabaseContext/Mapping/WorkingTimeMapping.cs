@@ -1,18 +1,10 @@
 ﻿using de.webducer.csharp.sqliteef6.BusinessData;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.ModelConfiguration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace de.webducer.csharp.sqliteef6.DatabaseContext.Mapping
-{
-    public class WorkingTimeMapping : EntityTypeConfiguration<WorkingTimeRange>
-    {
-        public WorkingTimeMapping()
-        {
+namespace de.webducer.csharp.sqliteef6.DatabaseContext.Mapping {
+    public class WorkingTimeMapping : EntityTypeConfiguration<WorkingTimeRange> {
+        public WorkingTimeMapping() {
             // Primary key
             this.HasKey(k => k.Id);
 
