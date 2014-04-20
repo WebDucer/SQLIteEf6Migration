@@ -70,6 +70,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ExistingDbTest.cs" />
+    <Compile Include="CreationDbTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BusinessData\BusinessData.csproj">

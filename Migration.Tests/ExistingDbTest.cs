@@ -13,9 +13,9 @@ namespace de.webducer.csharp.sqliteef6.Migration.Tests {
         [DeploymentItem(@"TestDatabases\testDbV1.db", "TestData")]
         public void DatabaseExistsTest() {
             using(var context = new DatabaseContext.DatabaseContext(@"TestData\testDbV1.db")) {
-                context.WorkingTime.Add(new BusinessData.WorkingTimeRange() { StartTime = DateTime.Now, PauseDuration = 15, EndTime = DateTime.Now.AddHours(7) });
+                context.WorkingTimes.Add(new BusinessData.WorkingTimeRange() { StartTime = DateTime.Now, PauseDuration = 15, EndTime = DateTime.Now.AddHours(7) });
                 context.SaveChanges();
-                var item = context.WorkingTime.FirstOrDefault();
+                var item = context.WorkingTimes.FirstOrDefault();
 
                 Assert.IsNotNull(item);
             }
