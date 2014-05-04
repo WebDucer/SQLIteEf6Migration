@@ -1,9 +1,4 @@
 ﻿using de.webducer.csharp.sqliteef6.DatabaseContext.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace de.webducer.csharp.sqliteef6.DatabaseContext.Migration {
     public class InitDatabaseStep : IMigrationStep<DatabaseContext> {
