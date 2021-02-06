@@ -2,9 +2,12 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.ModelConfiguration;
 
-namespace de.webducer.csharp.sqliteef6.DatabaseContext.Mapping {
-    public class WorkingTimeMapping : EntityTypeConfiguration<WorkingTimeRange> {
-        public WorkingTimeMapping() {
+namespace de.webducer.csharp.sqliteef6.DatabaseContext.Mapping
+{
+    public class WorkingTimeMapping : EntityTypeConfiguration<WorkingTimeRange>
+    {
+        public WorkingTimeMapping()
+        {
             // Primary key
             this.HasKey(k => k.Id);
 
