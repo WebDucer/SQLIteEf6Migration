@@ -1,1 +1,1 @@
-﻿ALTER TABLE [time_tracking] ADD COLUMN [Comment] TEXT;
+﻿ALTER TABLE [time_tracking] ADD COLUMN [comment] TEXT;
